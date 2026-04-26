@@ -1,0 +1,93 @@
+body {
+  padding-top: 64px;
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+  padding: 18px 0;
+}
+
+.wordmark {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.wordmark-glyph {
+  font-family: var(--font-display);
+  font-variation-settings: "opsz" 144, "SOFT" 0, "WONK" 1;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.wordmark-rule {
+  width: 36px;
+  height: 1px;
+  background: var(--ink);
+  align-self: center;
+  transform: translateY(-1px);
+}
+
+.wordmark-text {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+}
+
+.site-nav {
+  display: flex;
+  gap: 36px;
+}
+
+.site-nav a {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.site-nav a:hover {
+  color: var(--ochre);
+}
+
+.site-nav a.active {
+  color: var(--ochre);
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 56px 0 40px;
+  margin-top: 120px;
+}
+
+.colophon {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink-soft);
+  max-width: 38ch;
+}
+
+@media (max-width: 920px) {
+  .site-footer .frame {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+}
