@@ -175,3 +175,109 @@ body {
   .hero-headline .line-2, .hero-headline .line-3 { padding-left: 0; }
   .hero-foot { grid-template-columns: 1fr; }
 }
+
+/* ---------- Thesis & Motif ---------- */
+
+section.thesis, section.motif {
+  padding: 120px 0;
+  border-top: 1px solid var(--rule);
+  position: relative;
+}
+
+.section-tag {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 64px;
+}
+.section-tag .num { color: var(--ochre); }
+
+.thesis-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.thesis-headline {
+  font-size: clamp(44px, 6vw, 88px);
+}
+.thesis-headline .ital { color: var(--ochre); }
+.thesis-body {
+  padding-top: 12px;
+}
+.thesis-body p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin-bottom: 20px;
+  max-width: 48ch;
+}
+.thesis-body p em {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-style: italic;
+}
+
+.motif-header {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+.motif-header h2 { font-size: clamp(40px, 5vw, 72px); }
+.motif-header h2 .ital { color: var(--ochre); }
+.motif-header p {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+
+.motif-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.motif-card {
+  border: 1px solid var(--rule);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+  background: var(--paper);
+}
+.motif-card.dark {
+  background: var(--ink);
+  color: var(--paper);
+  border-color: var(--ink);
+}
+.motif-card.dark .micro { color: rgba(243, 238, 229, 0.5); }
+.motif-card.dark .motif-figure { color: var(--ochre); }
+
+.motif-figure {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+  font-size: clamp(96px, 14vw, 176px);
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+  color: var(--ochre);
+  margin: 32px 0;
+}
+.motif-figure .unit {
+  font-size: 0.32em;
+  letter-spacing: 0;
+  opacity: 0.75;
+  margin-left: 8px;
+}
+.motif-card p {
+  font-size: 16px;
+  line-height: 1.55;
+  max-width: 36ch;
+}
+
+@media (max-width: 920px) {
+  .thesis-grid, .motif-header, .motif-grid { grid-template-columns: 1fr; gap: 40px; }
+  section.thesis, section.motif { padding: 80px 0; }
+}
