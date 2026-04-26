@@ -118,7 +118,7 @@ body {
 .hero-headline .amp {
   color: var(--ochre);
   font-style: italic;
-  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 0;
 }
 
 .hero-foot {

@@ -49,7 +49,7 @@ body::before {
 .ital {
   font-family: var(--font-display);
   font-style: italic;
-  font-variation-settings: "opsz" 72, "SOFT" 100, "WONK" 1;
+  font-variation-settings: "opsz" 72, "SOFT" 100, "WONK" 0;
   font-weight: 350;
 }
 
