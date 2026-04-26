@@ -118,7 +118,6 @@ body {
 .hero-headline .amp {
   color: var(--ochre);
   font-style: italic;
-  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 0;
 }
 
 .hero-foot {
@@ -140,7 +139,6 @@ body {
   color: var(--ink);
   font-family: var(--font-display);
   font-style: italic;
-  font-variation-settings: "opsz" 22, "SOFT" 100, "WONK" 0;
 }
 
 .cta-link {
@@ -258,7 +256,6 @@ section.thesis, section.motif {
 .motif-figure {
   font-family: var(--font-display);
   font-weight: 300;
-  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
   font-size: clamp(96px, 14vw, 176px);
   letter-spacing: -0.04em;
   line-height: 0.85;
@@ -466,7 +463,6 @@ section.numbers, section.arc, section.metrics {
 .num-fig {
   font-family: var(--font-display);
   font-weight: 300;
-  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
   font-size: clamp(64px, 8vw, 120px);
   line-height: 0.9;
   letter-spacing: -0.04em;

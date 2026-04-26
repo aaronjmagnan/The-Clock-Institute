@@ -40,17 +40,15 @@ body::before {
 
 .display {
   font-family: var(--font-display);
-  font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
   font-weight: 300;
-  letter-spacing: -0.035em;
-  line-height: 0.92;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
 }
 
 .ital {
   font-family: var(--font-display);
   font-style: italic;
-  font-variation-settings: "opsz" 72, "SOFT" 100, "WONK" 0;
-  font-weight: 350;
+  font-weight: 400;
 }
 
 .mono {
