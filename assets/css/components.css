@@ -1,5 +1,5 @@
 body {
-  padding-top: 64px;
+  padding-top: 88px;
 }
 
 /* ---------- Header ---------- */
@@ -18,22 +18,14 @@ body {
 
 .wordmark {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   gap: 14px;
 }
 
 .wordmark-mark {
-  width: 32px;
-  height: 32px;
+  width: 48px;
+  height: 48px;
   display: block;
-}
-
-.wordmark-rule {
-  width: 36px;
-  height: 1px;
-  background: var(--ink);
-  align-self: center;
-  transform: translateY(-1px);
 }
 
 .wordmark-text {
@@ -92,7 +84,7 @@ body {
 /* ---------- Hero ---------- */
 
 .hero {
-  min-height: calc(100vh - 64px);
+  min-height: calc(100vh - 88px);
   display: flex;
   align-items: center;
   padding: 80px 0;
