@@ -363,7 +363,7 @@ section.closing {
   section.program-teaser, section.closing { padding: 80px 0; }
 }
 
-/* ---------- About: page head, pillars, structure ---------- */
+/* ---------- About: page head, what-we-do, structure ---------- */
 
 section.page-head {
   padding: 80px 0 100px;
@@ -383,51 +383,38 @@ section.page-head {
   border-top: 1px solid var(--rule);
 }
 
-section.pillars, section.structure {
+section.what-we-do {
   padding: 100px 0;
   border-top: 1px solid var(--rule);
 }
 
-.pillar-list {
+.wwd-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0;
-  border-top: 1px solid var(--rule);
+  grid-template-columns: 1.4fr 1fr;
+  gap: 80px;
+  align-items: start;
 }
-.pillar {
-  padding: 48px 0;
-  display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 24px;
-  border-bottom: 1px solid var(--rule);
-  padding-right: 48px;
+
+.wwd-lead h2 {
+  font-size: clamp(40px, 5.5vw, 80px);
 }
-.pillar:nth-child(odd) { border-right: 1px solid var(--rule); padding-left: 0; padding-right: 64px; }
-.pillar:nth-child(even) { padding-left: 64px; }
-.pillar .p-num {
-  font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  color: var(--ochre);
-  padding-top: 14px;
-}
-.pillar .p-name {
-  font-family: var(--font-display);
-  font-weight: 350;
-  font-size: 36px;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-}
-.pillar .p-name em {
-  font-style: italic;
-  font-variation-settings: "opsz" 72, "SOFT" 100, "WONK" 1;
-  color: var(--ochre);
-}
-.pillar p {
-  font-size: 16px;
-  line-height: 1.55;
+.wwd-lead h2 .ital { color: var(--ochre); }
+
+.wwd-detail p {
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--ink-soft);
-  max-width: 38ch;
+  margin-bottom: 20px;
+  max-width: 48ch;
+}
+.wwd-detail p:first-child {
+  font-size: 20px;
+  color: var(--ink);
+}
+
+section.structure {
+  padding: 100px 0;
+  border-top: 1px solid var(--rule);
 }
 
 .record {
@@ -453,11 +440,9 @@ section.pillars, section.structure {
 }
 
 @media (max-width: 920px) {
-  .pillar-list { grid-template-columns: 1fr; }
-  .pillar:nth-child(odd) { border-right: none; padding-right: 0; }
-  .pillar:nth-child(even) { padding-left: 0; }
+  .wwd-grid { grid-template-columns: 1fr; gap: 40px; }
   .record-row { grid-template-columns: 1fr; gap: 4px; }
-  section.pillars, section.structure { padding: 64px 0; }
+  section.what-we-do, section.structure { padding: 64px 0; }
 }
 
 /* ---------- Programs: numbers, arc, metrics ---------- */
