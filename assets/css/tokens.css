@@ -1,0 +1,18 @@
+:root {
+  --paper: #f3eee5;
+  --paper-deep: #ebe4d6;
+  --ink: #1a1916;
+  --ink-soft: #2a2925;
+  --ochre: #b8651b;
+  --ochre-deep: #8a4a14;
+  --rule: rgba(26, 25, 22, 0.14);
+  --rule-strong: rgba(26, 25, 22, 0.28);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Newsreader', Georgia, serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --max-w: 1240px;
+  --pad-x: 56px;
+  --pad-x-sm: 28px;
+}
