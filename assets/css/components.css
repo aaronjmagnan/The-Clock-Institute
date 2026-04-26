@@ -566,70 +566,8 @@ section.numbers, section.arc, section.metrics {
   section.numbers, section.arc, section.metrics { padding: 64px 0; }
 }
 
-/* ---------- Partner: lanes & contact ---------- */
+/* ---------- Partner: contact email ---------- */
 
-section.partner-types, section.contact {
-  padding: 100px 0;
-  border-top: 1px solid var(--rule);
-}
-
-.lane-list {
-  border-top: 1px solid var(--ink);
-}
-.lane {
-  display: grid;
-  grid-template-columns: 60px 1fr 220px;
-  gap: 48px;
-  padding: 56px 0;
-  border-bottom: 1px solid var(--rule);
-  align-items: start;
-}
-.lane-num {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  color: var(--ochre);
-  padding-top: 10px;
-}
-.lane-name {
-  font-family: var(--font-display);
-  font-weight: 350;
-  font-size: clamp(28px, 3vw, 36px);
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-}
-.lane p {
-  font-size: 17px;
-  line-height: 1.6;
-  color: var(--ink-soft);
-  max-width: 56ch;
-}
-.lane p em {
-  color: var(--ink);
-  font-family: var(--font-display);
-  font-style: italic;
-}
-.lane-meta {
-  color: var(--ink-soft);
-  align-self: start;
-  padding-top: 14px;
-  text-align: right;
-}
-
-.contact-headline {
-  font-size: clamp(48px, 6vw, 88px);
-  margin-bottom: 64px;
-}
-.contact-headline .ital { color: var(--ochre); }
-.contact-single {
-  border-top: 1px solid var(--rule);
-  padding-top: 48px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  max-width: 60ch;
-}
 .contact-email {
   display: inline-block;
   font-family: var(--font-display);
@@ -643,15 +581,4 @@ section.partner-types, section.contact {
 .contact-email:hover {
   color: var(--ochre);
   border-color: var(--ochre);
-}
-.contact-audience {
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--ink-soft);
-}
-
-@media (max-width: 920px) {
-  .lane { grid-template-columns: 1fr; gap: 12px; }
-  .lane-meta { text-align: left; padding-top: 8px; }
-  section.partner-types, section.contact { padding: 64px 0; }
 }
