@@ -91,3 +91,87 @@ body {
     gap: 32px !important;
   }
 }
+
+/* ---------- Hero ---------- */
+
+.hero {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+}
+
+.hero-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.hero-headline {
+  font-size: clamp(64px, 10.5vw, 168px);
+  margin-bottom: 80px;
+}
+.hero-headline .line { display: block; }
+.hero-headline .line-2 { padding-left: 18%; }
+.hero-headline .line-3 { padding-left: 6%; }
+.hero-headline .amp {
+  color: var(--ochre);
+  font-style: italic;
+  font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+}
+
+.hero-foot {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+  align-items: end;
+  padding-top: 40px;
+  border-top: 1px solid var(--rule);
+}
+
+.hero-foot .lede {
+  font-size: 21px;
+  line-height: 1.5;
+  max-width: 52ch;
+  color: var(--ink-soft);
+}
+.hero-foot .lede em {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-variation-settings: "opsz" 22, "SOFT" 100, "WONK" 0;
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--ink);
+  transition: gap 0.3s ease, color 0.3s ease;
+}
+.cta-link:hover { gap: 18px; color: var(--ochre); border-color: var(--ochre); }
+.cta-arrow { font-family: var(--font-display); font-size: 18px; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-headline .line {
+  opacity: 0;
+  animation: fadeUp 1.2s cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+}
+.hero-headline .line-1 { animation-delay: 0.2s; }
+.hero-headline .line-2 { animation-delay: 0.45s; }
+.hero-headline .line-3 { animation-delay: 0.7s; }
+
+.hero-meta, .hero-foot {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards 1s;
+}
+
+@media (max-width: 920px) {
+  .hero-headline .line-2, .hero-headline .line-3 { padding-left: 0; }
+  .hero-foot { grid-template-columns: 1fr; }
+}
