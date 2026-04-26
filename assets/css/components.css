@@ -621,38 +621,37 @@ section.partner-types, section.contact {
   margin-bottom: 64px;
 }
 .contact-headline .ital { color: var(--ochre); }
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+.contact-single {
   border-top: 1px solid var(--rule);
   padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  max-width: 60ch;
 }
-.contact-card .micro-ochre { display: block; margin-bottom: 24px; }
 .contact-email {
   display: inline-block;
   font-family: var(--font-display);
   font-weight: 380;
-  font-size: 22px;
-  letter-spacing: -0.01em;
-  margin-bottom: 16px;
+  font-size: clamp(28px, 4vw, 44px);
+  letter-spacing: -0.015em;
   border-bottom: 1px solid var(--rule);
-  padding-bottom: 6px;
+  padding-bottom: 8px;
   transition: border-color 0.3s ease, color 0.3s ease;
 }
 .contact-email:hover {
   color: var(--ochre);
   border-color: var(--ochre);
 }
-.contact-card p {
-  font-size: 15px;
-  line-height: 1.5;
+.contact-audience {
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--ink-soft);
 }
 
 @media (max-width: 920px) {
   .lane { grid-template-columns: 1fr; gap: 12px; }
   .lane-meta { text-align: left; padding-top: 8px; }
-  .contact-grid { grid-template-columns: 1fr; gap: 40px; }
   section.partner-types, section.contact { padding: 64px 0; }
 }
