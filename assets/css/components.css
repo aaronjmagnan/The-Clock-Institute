@@ -34,6 +34,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.16em;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .site-nav {
@@ -79,6 +80,16 @@ body {
     grid-template-columns: 1fr !important;
     gap: 32px !important;
   }
+}
+
+@media (max-width: 720px) {
+  .wordmark-text { display: none; }
+  .site-nav { gap: 16px; }
+  .site-nav a {
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+  .site-footer .wordmark-text { display: inline; }
 }
 
 /* ---------- Hero ---------- */
